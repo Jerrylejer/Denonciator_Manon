@@ -1,0 +1,24 @@
+<section>
+    <div class="container">
+      <div>
+        <p>Liste des absents</p>
+          <ul>
+            <ng-container *ngFor="let absent of learnersService.absentMen; index as i">
+              <li>
+                <p>{{absent}}<button (click)="deleteAbsentMen(i)">X</button></p>
+              </li>
+            </ng-container>
+          </ul>
+      </div>
+      <div>
+        <p>Liste des absentes</p>
+        <ul>
+          <ng-container *ngFor="let absent of learnersService.absentWomen; index as i">
+            <li>
+              <p>{{absent}}<button (click)="deleteAbsentWomen(i)">X</button></p>
+            </li>
+          </ng-container>
+        </ul>
+      </div>
+    </div>
+  </section>

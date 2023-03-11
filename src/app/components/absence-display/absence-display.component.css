@@ -1,0 +1,32 @@
+section {
+    display: flex;
+    height: 800px;
+    align-items: center;
+    width: 50vw;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 154px;
+    border-left: 2px solid rgb(220, 220, 220);
+    height: 60vh;
+  }
+  
+  p {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  button {
+    width: 21px;
+    height: 21px;
+    border: none;
+    border-radius: 100px;
+    margin-left: 20px;
+    font-size: 85%;
+    font-weight: 700;
+    background-color: #d9d9d9;
+    padding: 2px 2px;
+    cursor: pointer;
+  }

@@ -1,0 +1,19 @@
+<section>
+  <form
+  class="container"
+  #absenceForm="ngForm"
+  (ngSubmit)="onSubmitForm()"
+  >
+  {{ absenceForm.value | json }}
+    <p>Ajouter un.e absent.e</p>
+    <select name="apprenants" id="apprenants" [(ngModel)]="selected">
+      <option default>Sélectionner une personne</option>
+      <option
+        *ngFor="let learner of element"
+         >
+        {{ learner.firstname }}
+      </option>
+    </select>
+    <button type="submit">Ajouter</button>
+  </form>
+</section>
