@@ -9,9 +9,9 @@ export class LearnersService {
   learnersArray: Learners[] = LEARNERS;
   // J'accède aux props d'un learner
   learner!: Learners;
-  // Je crée un tableau pour intégrer mes absents hommes et un tableau pour les femmes
+  // Une référence pour comparer l'option selected avec mes prénoms "homme" et pusher ensuite correctement
   men: string[]  = ['Jérôme', 'Erdal', 'Fahed', 'Thomas'];
+  // Je crée un tableau pour intégrer mes absents hommes et un tableau pour les femmes
   absentMen: string[] = [];
   absentWomen: string[] = [];
-
 }
