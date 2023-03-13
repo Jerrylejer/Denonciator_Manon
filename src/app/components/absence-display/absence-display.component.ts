@@ -7,10 +7,10 @@ import { LearnersService } from 'src/app/services/learners.service';
   styleUrls: ['./absence-display.component.css'],
 })
 export class AbsenceDisplayComponent {
+
   constructor(public learnersService: LearnersService) {}
 
   ngOnInit() {
-
   }
 
   deleteAbsentMen(i: any) {
